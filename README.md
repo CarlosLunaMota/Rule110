@@ -16,7 +16,7 @@ A borderless implementation of the Rule 110 cellular automaton.
     def show(universe, window, alive='■', dead=' ', space=' '):
         """Prints a segment of the universe on the screen."""
 
-        print space.join(alive if x in universe else dead for x in range(*window))
+        print(space.join(alive if x in universe else dead for x in range(*window)))
 ```
 
 **Example:**
